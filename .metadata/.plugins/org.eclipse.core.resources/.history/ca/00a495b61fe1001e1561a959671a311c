@@ -1,0 +1,11 @@
+package com.sathya.collections;
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+          List<Population> populationData = new ArrayList<Population>();
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.sathya;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+            Employee employee1 = new Employee();
+            Employee employee2 = new Employee();
+            
+            employee1.setEmpId(1001);
+            employee1.setEmpName("Sai Rohith");
+            employee1.setEmpSalary(10000.89);
+            
+            employee2.setEmpId(1002);
+            employee2.setEmpName("vardhan");
+            employee2.setEmpSalary(12000.36);
+            
+            System.out.println(employee1.getEmpId()+" "+employee1.getEmpName()+" "+employee1.getEmpSalary());
+	}
+
+}

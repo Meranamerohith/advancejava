@@ -1,0 +1,6 @@
+package com.sathya;
+
+
+public class Employee {
+	private String empName;
+}

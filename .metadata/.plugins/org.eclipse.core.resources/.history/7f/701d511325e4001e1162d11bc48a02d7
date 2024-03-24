@@ -1,0 +1,37 @@
+package com.food.sathya;
+
+public class RestaurantManagement {
+
+	public static void main(String[] args) {
+		OrderManager manager = new OrderManager();
+
+        // Adding orders
+        manager.addOrder("GT378", Arrays.asList("dosa", "idly", "poori"));
+        manager.addOrder("AB123", Arrays.asList("pizza", "pasta", "burger"));
+        manager.addOrder("XY789", Arrays.asList("chicken", "mutton", "fish"));
+        manager.addOrder("MK345", Arrays.asList("dal", "paneer", "sambar"));
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Adding orders during runtime
+        System.out.println("Enter order ID (or type 'exit' to finish):");
+        String orderId = scanner.nextLine();
+        while (!orderId.equals("exit")) {
+            System.out.println("Enter items (comma-separated):");
+            String itemsInput = scanner.nextLine();
+            List<String> items = Arrays.asList(itemsInput.split("\\s*,\\s*"));
+            manager.addOrder(orderId, items);
+            System.out.println("Order added. Enter next order ID (or type 'exit' to finish):");
+            orderId = scanner.nextLine();
+        }
+
+        scanner.close();
+
+        // Displaying all orders
+        System.out.println("\nAll orders:");
+        manager.listAllOrders();
+    }
+
+	}
+
+}

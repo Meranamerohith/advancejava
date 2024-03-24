@@ -1,0 +1,15 @@
+package com.sathya;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+            Employee employee1 = new Employee();
+            
+            
+            employee1.setEmpId(1001);
+            employee1.setEmpName("Sai Rohith");
+            employee1.setEmpSalary(10000.89);
+	}
+
+}

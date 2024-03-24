@@ -1,0 +1,10 @@
+package com.food.sathya;
+
+public class RestaurantManagement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
